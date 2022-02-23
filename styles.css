@@ -1,0 +1,120 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  background-color: lightblue;
+}
+
+#header {
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+}
+
+#book-depository {
+  background-color: lightblue;
+  margin: 0px;
+  padding: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  z-index: 0;
+}
+
+.card {
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(62, 165, 164);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+.book_title {
+  font-size: 30px;
+}
+
+.book_author {
+  font-size: 20px;
+}
+
+.book_pages {
+  font-size: 20px;
+}
+
+.book_read {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.book_read:hover {
+  border: 1px solid black;
+}
+
+.book_delete {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.book_delete:hover {
+  background-color: lightgray;
+}
+
+#new_book_button {
+  background-color: cyan;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 30px;
+  font-size: 20px;
+}
+
+#new_book_button:hover {
+  background-color: rgb(87, 205, 205);
+}
+
+#form {
+  border: 1px black solid;
+  width: 200px;
+  height: 300px;
+  z-index: 3;
+  position: absolute;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: goldenrod;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -100px;
+}
+
+.form_label {
+  font-size: 30px;
+}
+
+.delete-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}

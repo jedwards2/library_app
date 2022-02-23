@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <script src="js-file.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Library</h1>
+        <button id="new_book_button">New Book</button>
+      </div>
+      <div id="book-depository"></div>
+      <form id="form">
+        <button id="close_book_button" type="button">X</button>
+        <label for="title" class="form_label">Title</label>
+        <input
+          type="text"
+          name="title"
+          class="form_input"
+          id="form-title"
+          onkeyup="checkSubmit()"
+        />
+        <label for="author" class="form_label">Author</label>
+        <input
+          type="text"
+          name="author"
+          class="form_input"
+          id="form-author"
+          onkeyup="checkSubmit()"
+        />
+        <label for="pages" class="form_label">Pages</label>
+        <input
+          type="text"
+          name="pages"
+          class="form_input"
+          id="form-pages"
+          onkeyup="checkSubmit()"
+        />
+        <label for="read" class="form_label">Read?</label>
+        <input
+          type="checkbox"
+          name="read"
+          class="form_input"
+          id="read-checked"
+        />
+        <button id="submit_book_button" type="button" disabled>Add Book</button>
+      </form>
+    </div>
+  </body>
+</html>
