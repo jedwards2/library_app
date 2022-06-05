@@ -10,26 +10,26 @@ body {
   flex-direction: column;
   height: 100%;
   position: relative;
-  background-color: lightblue;
+  background-image: url("books.jpg");
 }
 
 #header {
-  background-color: lightseagreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 1;
+  color: lightgray;
 }
 
 #book-depository {
-  background-color: lightblue;
   margin: 0px;
   padding: 20px;
   flex-wrap: wrap;
   display: flex;
   z-index: 0;
+
 }
 
 .card {
@@ -41,9 +41,10 @@ body {
   border: 1px black solid;
   margin: 10px;
   padding: 5px;
-  background-color: rgb(62, 165, 164);
+  background-color: rgba(10, 0, 0, 0.3);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+  color: lightgray;
 }
 
 .book_title {
@@ -70,9 +71,9 @@ body {
 }
 
 .book_delete {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid black;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .book_delete:hover {
@@ -80,19 +81,21 @@ body {
 }
 
 #new_book_button {
-  background-color: cyan;
+  background-color: light-gray;
   border: none;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 5px 30px;
   font-size: 20px;
+  margin: 20px;
 }
 
 #new_book_button:hover {
-  background-color: rgb(87, 205, 205);
+  background-color: gray;
 }
 
 #form {
   border: 1px black solid;
+  border-radius: 5px;
   width: 200px;
   height: 300px;
   z-index: 3;
@@ -101,11 +104,12 @@ body {
   display: none;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: goldenrod;
+  background-color: rgba(10, 0, 0, 0.5);
   top: 50%;
   left: 50%;
   margin-top: -150px;
   margin-left: -100px;
+  color: lightgray;
 }
 
 .form_label {
